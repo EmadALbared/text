@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Nachnamen-Duell</title>
+    <style>
+        /* Ein bisschen CSS, damit es nicht komplett nackt aussieht */
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        .name-box { 
+            font-size: 24px; 
+            margin: 20px; 
+            padding: 20px; 
+            border: 2px solid #ccc; 
+            border-radius: 8px;
+            display: inline-block; 
+            min-width: 200px;
+        }
+        /* Diese Klasse versteckt die Vornamen am Anfang */
+        .hidden-name { 
+            color: gray; 
+            font-size: 16px; 
+            display: none; 
+            margin-right: 5px;
+        }
+        button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            margin: 10px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcher Nachname hat mehr Buchstaben?</h1>
+
+    <div>
+        <div class="name-box">
+            <span id="vorname-a" class="hidden-name">Max</span>
+            <strong id="nachname-a">Müller</strong>
+        </div>
+
+        <div class="name-box">
+            <span id="vorname-b" class="hidden-name">Arnold</span>
+            <strong id="nachname-b">Schwarzenegger</strong>
+        </div>
+    </div>
+
+    <div>
+        <button id="btn-a">A ist länger</button>
+        <button id="btn-equal">Gleich lang</button>
+        <button id="btn-b">B ist länger</button>
+    </div>
+    <div style="margin-top: 20px;">
+        <button id="btn-next" style="display: none; background-color: #4CAF50; color: white;">Nächstes Duell laden</button>
+    </div>
+
+    <br><br>
+    <a href="leaderboard.html">Zum Leaderboard</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
